@@ -24,12 +24,10 @@ app.post("/crear-pago", async (req, res) => {
       }
     ]
   };
-
-  const response = await mercadopago.preferences.create(preference);
-
-  res.json({
-    url: response.body.init_point
-  });
+res.json({
+  url: "https://google.com"
+});
+  
 
 });
 
